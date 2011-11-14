@@ -1,0 +1,6 @@
+File Matcher
+============
+
+As silly as it seems, after searching for quite a while, I couldn't find a ruby script that would run through directories recursively and have the ability to do anything to a file, compare files, etc. So I wrote one, and figured I'd share the love.
+
+This particular script runs an MD5 on each file and removes any duplicate files. This is particularly useful for getting rid of duplicate images (in iPhoto particularly, which has a very convoluted file structure -- the original reason for this script). But really, it can be used as a template for anything - the useful thing is the way that it runs through the files.
