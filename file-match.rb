@@ -3,9 +3,7 @@ require 'digest/md5'
 require 'fileutils'
 
 list = []
-files = []
-files << Dir['**/*.*']
-files.first.each do |f|
+Dir['**/*.*'].each do |f|
   checksum = Digest::MD5.hexdigest(File.read(f))
   if list.include?(checksum)
     FileUtils.mv(f, "/Users/jeffescalante/.Trash")
